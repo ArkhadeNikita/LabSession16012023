@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<beans xmlns="http://www.springframework.org/schema/beans"
+ xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:context="
+ http://www.springframework.org/schema/context"
+
+ xmlns:p="http://www.springframework.org/schema/p"
+ xsi:schemaLocation="http://www.springframework.org/schema/beans
+ http://www.springframework.org/schema/beans/spring-beans.xsd
+  http://www.springframework.org/schema/context
+  http://www.springframework.org/schema/context/spring-context.xsd">
+
+<bean class="com.employeespring.employeespringex.Employee" name="employee1">
+
+<property name="eid" value="101"/>
+<property name="ename" value="Nikita"/>
+<property name="address" value="Pune"/>
+<property name="salary" value="50000"/>
+
+</bean>
+
+<bean class="com.employeespring.employeespringex.Employee" name="employee2" p:eid="102" p:ename="Sama" p:address="Pune" p:salary="70000"/>
+
+<bean class="com.employeespring.employeespringex.Employee" name="employee3">
+
+<property name="eid">
+<value>103</value>
+</property>
+
+<property name="ename">
+<value>"Pritika"</value>
+</property>
+
+<property name="address">
+<value>"Waghale"</value>
+</property>
+
+<property name="salary">
+<value>40000</value>
+</property>
+
+</bean>
+</beans>
